@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="script.js">
+  </head>
+  <body>
+
+  <!--Nav Bar -->  
+<nav>
+  <nav class="navbar navbar-light" style="background-color: lightgray;">
+    <a class="navbar-brand" href=#>Password Generator</a>
+</nav>
+<!--Nav bar ends-->
+
+<!--This is the design-->
+<div class="container">
+  <div class="row">
+
+      <div class="col-lg-8 col-sm-12"> 
+
+        <div class="content">
+        </div>
+      </div>
+
+    <div class="wrapper">
+<!--CSS ends-->
+
+    <!-- This is the header-->
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        <!-- Header ends-->
+        </div>
+
+        <!--This is the password box-->
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <!--Password box ends-->
+        
+        <!--This is the footer-->
+        <div class="card-footer">
+          <br>
+          <div type="text" id="display"></div> 
+          <br>
+          <button id="generate">Generate Password</button>
+          <button id="copytoclipboard">Copy to Clipboard</button>
+      </div>
+    </div>
+    <!--Lined Java script page-->
+    <script src="script.js"></script>
+</script>
+  </body>
+</html>
