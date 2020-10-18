@@ -88,9 +88,9 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
+button {
   cursor: default;
-  background: #c0c7cf;
+  background: red;
 }
 
 .float-right {
@@ -134,3 +134,4 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}

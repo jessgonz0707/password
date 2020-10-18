@@ -9,10 +9,9 @@ var onlyNumeric = [0,1,2,3,4,5,6,7,8,9];
 
 function generateOptions() {
 
-  
-    var length = parseInt(prompt("How many characters would you like your password to contain?"));
 
-    // alerts added for passwork requirementd
+    //prompt user for at least 8 characters
+    var length = parseInt(prompt("How many characters would you like your password to contain?"));
 
     if (length < 8) {
         alert('The password must be at least 8 characters!');
@@ -39,7 +38,6 @@ function generateOptions() {
         alert("Your password must contain at least one special, numeric, lowercase, or uppercase character");
         return;
     }
-    //alerts end
 
     var questionOptions = {
         length: length,
@@ -79,8 +77,7 @@ function generatePassword() {
     if (options.upperCase) {
         for (i = 0; i < onlyUpper.length; ++i) {
         passwordPool.push(onlyUpper[i]);
-
-      }
+        }
     }
 
     var finalPassword = [];
@@ -95,12 +92,10 @@ function generatePassword() {
     var superFinal = finalPassword.join('');
     console.log(superFinal)
 
-    document.getElementById("display").textContent = superFinal;
+    document.getElementById("password").textContent = superFinal;
 }
 
-
     var password = "";
-
 
 function copytoClipboard() {
 
@@ -113,3 +108,4 @@ function copytoClipboard() {
 }
 
 generatePasswordButton.addEventListener('click', generatePassword);
+copyToClipBoardButton.addEventListener('click', copytoClipboard);
