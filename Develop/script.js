@@ -104,7 +104,7 @@ function generatePassword() {
 
 function copytoClipboard() {
 
-    document.getElementById("git display").select();
+    document.getElementById("display").select();
 
     document.execCommand("Copy");
 

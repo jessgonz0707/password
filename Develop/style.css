@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #6890b8;
+  background-color: #f9fbfd;
 }
 
 .wrapper {
@@ -27,7 +27,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color:grey
+  color: hsl(206, 17%, 28%);
 }
 
 .card {
@@ -46,7 +46,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background:white;
+  background: #e7e9eb;
   height: 2px;
 }
 
@@ -73,10 +73,11 @@ header {
 }
 
 .btn {
-  border:none;
-  background-color: hsl(hue, saturation, lightness) !important
-  border-radius: 25px; !important;
-  box-shadow: rgba
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
@@ -87,9 +88,9 @@ header {
   cursor: pointer;
 }
 
-button {
+button[disabled] {
   cursor: default;
-  background: red;
+  background: #c0c7cf;
 }
 
 .float-right {
@@ -117,7 +118,7 @@ button {
   overflow: hidden;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 690px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
@@ -125,12 +126,11 @@ button {
   }
 
   #password {
-    font-size: 1
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 500px) {
   .btn {
-    font-size: 0.8;
+    font-size: 0.8rem;
   }
-}
